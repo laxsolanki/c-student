@@ -6,8 +6,8 @@ int main(){
 FILE *fp,*temp;
 
 int n;
-printf("Enter password:\n ");
-scanf("%d\n",&n);
+printf("Enter password: ");
+scanf("%d",&n);
 
 int password = 1007;
 
@@ -27,30 +27,30 @@ printf("3 Search student\n");
 printf("4 Delete student\n");
 printf("5 Exit\n");
 
-printf("Enter choice:\n ");
-scanf("%d\n",&choice);
+printf("Enter choice: ");
+scanf("%d",&choice);
 
 if(choice == 1){
 
 fp = fopen("students.txt","a");
 
-printf("Enter name:\n ");
-scanf("%s\n",name);
+printf("Enter roll number: ");
+scanf("%d",&roll);
 
-printf("Enter roll number:\n ");
-scanf("%d\n",&roll);
+printf("Enter name: ");
+scanf("%s",name);
 
-printf("Enter father name:\n ");
-scanf("%s\n",father);
+printf("Enter father name: ");
+scanf("%s",father);
 
-printf("Enter mother name:\n ");
-scanf("%s\n",mother);
+printf("Enter mother name: ");
+scanf("%s",mother);
 
-printf("Enter class:\n ");
-scanf("%d\n",&cls);
+printf("Enter class: ");
+scanf("%d",&cls);
 
-printf("Enter batch:\n ");
-scanf("%s\n",batch);
+printf("Enter batch: ");
+scanf("%s",batch);
 
 fprintf(fp,"%d %s %s %s %d %s\n",
 roll,name,father,mother,cls,batch);
@@ -91,8 +91,8 @@ else if(choice == 3){
 
 int r, found=0;
 
-printf("Enter roll number:\n ");
-scanf("%d\n",&r);
+printf("Enter roll number: ");
+scanf("%d",&r);
 
 fp = fopen("students.txt","r");
 
